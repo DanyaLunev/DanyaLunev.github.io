@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@types/scrollmagic": "^2.0.1",
+    "express": "^4.17.1",
+    "gsap": "^3.7.0",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4",
+    "scrollmagic-plugins": "^1.0.8",
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "name": "eco-landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
