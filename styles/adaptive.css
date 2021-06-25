@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1200px) {
+    .logo {
+        font-size: 30px;
+    }
+    
+    .strokeText .text {
+        font-size: 42px;
+    }
+
+    .strokeText .underText {
+        font-size: 42px;
+    }
+
+    .desc {
+        max-width: 90%;
+    }
+
+    .arrow {
+        margin-top: 40px;
+    }
+}
