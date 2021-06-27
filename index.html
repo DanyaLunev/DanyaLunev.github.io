@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco-landing</title>
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </head>
 
 <body>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
     <div class="bgText">
 
         <div class="text">
@@ -19,7 +25,8 @@
             СОЦИАЛЬНЫХ ПРОБЛЕМ</div>
     </div>
 
-    <div class="logo">firstecologist<span>.ru</span></div>
+    <div class="logo"><div style="margin-top: -35px;">firstecologist<span>.ru</span></div></div>
+    <div class="appbar"></div>
 
     <div class="wrapper">
         <div class="firstSections">
@@ -48,16 +55,20 @@
                     </div>
                 </div>
                 <div class="desc" id="junk1_desc">Основными «поставщиками» огромного количества отходов на нашей планете
-                    являются<br />
-                    1) Жилые дома и бытовые предприятия.<br />
-                    2) Промышленные предприятия.<br />
-                    3) Теплоэнергетика.<br />
-                    4) Сельское хозяйство.<br />
-                    5) Транспорт.</div>
+                    являются<br /> <br/>
+                    <div class="list">
+                        1) Жилые дома и бытовые предприятия.<br />
+                        2) Промышленные предприятия.<br />
+                        3) Теплоэнергетика.<br />
+                        4) Сельское хозяйство.<br />
+                        5) Транспорт.</div>
+                    </div>
+
+                <a href="#section2" ><img class="arrow" src="../imgs/Arrow.svg"></a>
 
                 <div></div>
             </div>
-            <div class="section v-center h-center d-column">
+            <div class="section v-center h-center d-column" id="section2">
                 <div class="strokeText">
                     <div class="underText">
                         ПЕРЕРАБОТАТЬ И УНИЧТОЖИТЬ
@@ -68,13 +79,16 @@
                     </div>
                 </div>
                 <div class="desc">Переработка отходов в России пока налажена слабо и производится в небольших объемах.
+
                 </div>
+                                <a href="#section3" ><img class="arrow" style="margin-top:45vh !important" src="../imgs/Arrow.svg"></a>
+
             </div>
         </div>
 
 
-        <div class="section v-center h-center" id="section3">
-            <div class="strongText">В России накоплено более 30 млрд тонн промышленных отходов, из которых
+        <div class="section v-center h-center" style="flex-direction: column;" id="section3">
+            <div class="strongText"  style="width:60% !important; left:0;">В России накоплено более 30 млрд тонн промышленных отходов, из которых
                 перерабатывается менее 40 %. Пластик занимает 55% объема мусора и все это упаковка. На бумагу
                 приходится 23% от общего количества отходов, на металл и тетрапак — 13,5%, на стекло — 8%, на шины и
                 электроприборы — 0,5%. Сейчас же из общего количества отходов (65 млн т) лишь 18 млн т проходит
@@ -84,10 +98,15 @@
                 5-7 % мусора, остальное захоранивается. Национальный проект «Экология» предусматривает, что к 2024
                 году должно перерабатываться 36 % отходов, для этой цели должна быть выстроена система раздельного
                 сбора в масштабах страны и построены заводы по переработке общей мощностью 37 млн тонн.</div>
-            <img src="/imgs/leaf3.png" id="leaf3" alt="">
+                <a href="#section4" ><img style="margin-top:25vh;" src="../imgs/Arrow.svg"></a>
+
+            
+                <img src="/imgs/leaf3.png" id="leaf3" alt="">
+
         </div>
 
-        <div class="longSections">
+
+        <div class="longSections" id="section4">
             <div class="longLeafs"></div>
             <div class="section long v-center h-center d-column" id="section3">
                 <div class="textBlock">
@@ -139,6 +158,31 @@
                 </div>
             </div>
         </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide pad v-center h-center" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner b-center">
+              <div class="carousel-item active b-center">
+                <img class="d-block" style="width: 350px !important;" src="/imgs/1.png" alt="Первый слайд">
+              </div>
+              <div class="carousel-item b-center">
+                <img class="d-block" style="width: 350px !important; " src="/imgs/2.png" alt="Второй слайд">
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
         <div class="section v-center h-center" id="section3">
            <div class="block">

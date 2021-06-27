@@ -49,3 +49,14 @@ const scene4 = new ScrollMagic.Scene({
     triggerHook: 'onLeave',
     
 }).setTween('#leaf3', { bottom: 1500 }).addTo(controller)
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });

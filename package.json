@@ -3,6 +3,7 @@
     "@types/scrollmagic": "^2.0.1",
     "express": "^4.17.1",
     "gsap": "^3.7.0",
+    "materialize-css": "^1.0.0-rc.2",
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugin-gsap": "^1.0.4",
     "scrollmagic-plugins": "^1.0.8",
