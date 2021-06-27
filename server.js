@@ -9,7 +9,7 @@ app.use('/bundle', express.static(resolve(__dirname, './bundle')))
 
 
 app.get('/', (req, res) => {
-    res.sendFile(resolve(__dirname, './index.html'));
+    res.sendFile(resolve(__dirname, './html/index.html'));
 })
 
 

@@ -6,9 +6,6 @@
 body {
   overflow-x: hidden;
 }
-html{
-  scroll-behavior: smooth;
-}
 
 * {
   padding: 0;
@@ -86,10 +83,28 @@ html{
   position: relative;
 }
 
+@media (max-width: 1000px) {
+  .strokeText {
+    width: 820px;
+  }
+}
+
+@media (max-width: 758px) {
+  .strokeText {
+    width: 330px;
+  }
+}
+
 .strokeText .text {
   color: black;
   font-size: 52px;
   position: relative;
+}
+
+@media (max-width: 758px) {
+  .strokeText .text {
+    font-size: 20px;
+  }
 }
 
 .strokeText .underText {
@@ -101,8 +116,13 @@ html{
           transform: translate(-50%, -50%);
   width: 100%;
   color: white;
-  text-shadow: -1px -1px 0 #b6b6b6, 1px -1px 0 #b6b6b6, -1px 1px 0 #b6b6b6,
- 1px 1px 0 #b6b6b6;
+  text-shadow: -1px -1px 0 #b6b6b6, 1px -1px 0 #b6b6b6, -1px 1px 0 #b6b6b6, 1px 1px 0 #b6b6b6;
+}
+
+@media (max-width: 758px) {
+  .strokeText .underText {
+    font-size: 20px;
+  }
 }
 
 .desc {
@@ -113,29 +133,28 @@ html{
   font-size: 24px;
 }
 
+@media (max-width: 1000px) {
+  .desc {
+    width: 720px;
+  }
+}
+
+@media (max-width: 758px) {
+  .desc {
+    width: 330px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
 .logo {
   position: fixed;
-
-  height: 0; 
-  width: 20%;
-  border-top: 40px solid #fff;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  color: black;
-  font-size: 24px;
-  text-align: center;
-  z-index: 1;
+  top: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-}
-.appbar{
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 10px;
-  top:0;
-  background: #fff;
+          transform: translate(-50%, 0);
+  color: black;
+  font-size: 24px;
 }
 
 .logo span {
@@ -170,10 +189,25 @@ html{
   position: relative;
 }
 
+@media (max-width: 1382px) {
+  .leafs .leafWithShadow {
+    margin-bottom: 0;
+  }
+  .leafs .leafWithShadow .leaf {
+    width: 200px;
+  }
+}
+
 .leafs .leafWithShadow .leafShadow {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 1382px) {
+  .leafs .leafWithShadow .leafShadow {
+    width: 200px;
+  }
 }
 
 .leafs .leafWithShadow .leafShadow.lower {
@@ -181,8 +215,21 @@ html{
   left: 6px;
 }
 
+@media (max-width: 1382px) {
+  .leafs .leafWithShadow .leafShadow.lower {
+    top: 0;
+    left: -10px;
+  }
+}
+
 #leaf2Shadow {
   width: 400px;
+}
+
+@media (max-width: 1382px) {
+  #leaf2Shadow {
+    width: 200px;
+  }
 }
 
 .strongText {
@@ -191,26 +238,26 @@ html{
   font-size: 24px;
 }
 
+@media (max-width: 1000px) {
+  .strongText {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 809px) {
+  .strongText {
+    max-width: 330px;
+    font-size: 16px;
+  }
+}
+
 #leaf3 {
   position: absolute;
   bottom: 2000;
   right: 0;
+  z-index: -1;
 }
-#leaf4 {
-  position: absolute;
-  top: 450px;
-  left: 0px;
-}
-#rock{
-  position: absolute;
-  top:1000px;
-  right: 0;
-}
-#leaf5{
-  position: absolute;
-  top: 1500px;
-  right: 0;
-}
+
 .textBlock {
   width: 1000px;
   display: -webkit-box;
@@ -226,6 +273,19 @@ html{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .textBlock {
+    width: 768px;
+  }
+}
+
+@media (max-width: 809px) {
+  .textBlock {
+    width: 330px;
+    font-size: 16px;
+  }
 }
 
 .textBlock .title {
@@ -247,7 +307,7 @@ html{
 .block {
   overflow: hidden;
   position: relative;
-  width: 1300px;
+  width: 1500px;
   background-color: white;
   border: 1px solid #ededed;
   border-radius: 10px;
@@ -320,27 +380,23 @@ html{
   position: absolute;
   right: -25px;
 }
-.list{
-  text-align: left;
-  padding-left: 25%;
-}
-.arrow{
-  margin-top: 75px;
+
+@media (max-width: 1382px) {
+  .leftSide {
+    z-index: 1;
+  }
 }
 
-#element::-webkit-scrollbar {
-  width: 10px;
-  background-color: #f9f9fd;
+@media (max-width: 1000px) {
+  .leftSide {
+    z-index: 1;
+  }
 }
 
-#element::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #000;
+@media (max-width: 809px) {
+  .leftSide {
+    z-index: 1;
+  }
 }
 
-#element::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  background-color: #f9f9fd;
-}
 /*# sourceMappingURL=index.css.map */
