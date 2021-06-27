@@ -85,7 +85,7 @@ body {
 
 @media (max-width: 1000px) {
   .strokeText {
-    width: 720px;
+    width: 820px;
   }
 }
 
@@ -255,6 +255,7 @@ body {
   position: absolute;
   bottom: 2000;
   right: 0;
+  z-index: -1;
 }
 
 .textBlock {
@@ -379,4 +380,23 @@ body {
   position: absolute;
   right: -25px;
 }
+
+@media (max-width: 1382px) {
+  .leftSide {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .leftSide {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 809px) {
+  .leftSide {
+    z-index: 1;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
