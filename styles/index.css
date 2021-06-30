@@ -219,6 +219,15 @@ html{
   .leafs .leafWithShadow .leaf {
     width: 200px;
   }
+  .longSections{
+    margin-top: 100px;
+  }
+  #arrow2{
+    height: 0;
+  }
+  #arrow3{
+    height: 0;
+  }
 }
 
 .leafs .leafWithShadow .leafShadow {
@@ -242,6 +251,24 @@ html{
   .leafs .leafWithShadow .leafShadow.lower {
     top: 0;
     left: -10px;
+  }
+  #leaf3{
+    width: 200px;
+  }
+  #leaf4{
+    width: 100px;
+  }
+  #leaf5{
+    width: 100px;
+  }
+  #rock{
+    width: 75px;
+  }
+  #Download{
+    height: 0;
+  }
+  .logo{
+    width:250px
   }
 }
 
@@ -309,6 +336,21 @@ html{
     width: 330px;
     font-size: 16px;
   }
+}
+#leaf4 {
+  position: absolute;
+  top: 560px;
+  left: 0px;
+}
+#rock{
+  position: absolute;
+  top:1000px;
+  right: 0;
+}
+#leaf5{
+  position: absolute;
+  top: 1500px;
+  right: 0;
 }
 
 .textBlock .title {
